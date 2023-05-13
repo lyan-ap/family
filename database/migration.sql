@@ -1,9 +1,20 @@
+-- CREATE TABLE `users`
+-- (
+--     id   bigint auto_increment,
+--     name varchar(255) NOT NULL,
+--     PRIMARY KEY (`id`)
+-- );
+
+-- INSERT INTO `users` (`name`)
+-- VALUES ('Solomon'),
+--        ('Menelik');
+
 DROP TABLE IF EXISTS io;
 CREATE TABLE io (
   id         INT AUTO_INCREMENT NOT NULL,
   mobile      VARCHAR(11) NOT NULL,
   wechat     VARCHAR(50) NOT NULL,
-  json_data  json,
+  json_data  json NOT NULL,
   PRIMARY KEY (`id`)
 );
 
@@ -12,10 +23,6 @@ CREATE TABLE la (
   id         INT AUTO_INCREMENT NOT NULL,
   mobile      VARCHAR(11) NOT NULL,
   wechat     VARCHAR(50) NOT NULL,
-  json_data  json,
+  json_data  json NOT NULL,
   PRIMARY KEY (`id`)
 );
-
--- INSERT INTO `io` (`mobile`,`wechat`)
--- VALUES ('17712345678','wechat123',{}),
---        ('18912345678','wechat456',{});
